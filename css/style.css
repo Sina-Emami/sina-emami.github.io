@@ -580,6 +580,46 @@ section.resume-section .resume-item .resume-date {
   margin-bottom: 40px;
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px auto 0;
+  max-width: 1000px;
+}
+
+.skill-pill {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 12px 16px;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  text-align: center;
+}
+
+.skill-pill i {
+  color: var(--main-blue);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 991px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .skill-item {
   padding: 20px 0;
   margin-bottom: 30px;
