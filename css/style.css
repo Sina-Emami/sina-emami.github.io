@@ -333,6 +333,11 @@ section.resume-section .resume-item .resume-date {
   min-height: 9rem;
 }
 
+.experience-card {
+  min-height: auto;
+  padding: 1.25rem !important;
+}
+
 /*====================================================
                    PORTFOLIO
 ======================================================*/
